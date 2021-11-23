@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="particles.cpp" />
+    <ClCompile Include="..\dependencies\stb\src\libstb.c">
+      <Filter>dependencies\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="particles_graphics.cpp" />
+    <ClCompile Include="ui_context.cpp" />
+    <ClCompile Include="..\dependencies\GeometryGenerator\src\GeometryGenerator.cpp">
+      <Filter>dependencies\GeometryGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui\src\imgui.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui\src\imgui_demo.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui\src\imgui_draw.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui\src\imgui_impl_dx12.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui\src\imgui_impl_win32.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui\src\imgui_widgets.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui\src\imgui_tables.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render_object.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{324ca05f-7e28-4828-8a58-3b2d0505a820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\stb">
+      <UniqueIdentifier>{1efa40ed-64e5-4801-992b-1bb793c40dc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{4430b429-55b0-4b7a-afb1-917a6c1a9cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\GeometryGenerator">
+      <UniqueIdentifier>{5d9c7f29-6381-4d3b-a197-c26bf31e0ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\imgui">
+      <UniqueIdentifier>{f262a87b-f1f4-4615-be36-68e0be07a0f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="particles_graphics.h" />
+    <ClInclude Include="ui_context.h" />
+    <ClInclude Include="render_object.h" />
+    <ClInclude Include="..\dependencies\GeometryGenerator\include\GeometryGenerator.h">
+      <Filter>dependencies\GeometryGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_data.h" />
+    <ClInclude Include="..\dependencies\imgui\include\imconfig.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui\include\imgui.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui\include\imgui_impl_dx12.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui\include\imgui_impl_win32.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui\include\imgui_internal.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui\include\imstb_rectpack.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui\include\imstb_textedit.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui\include\imstb_truetype.h">
+      <Filter>dependencies\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_shared_constants.h" />
+    <ClInclude Include="volume_light.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\pbr_simple.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\solid_color.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="packages.config" />
+    <None Include="shaders\debug_line.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lighting_pass.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\common.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shadow_pass.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\particle_sim.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\particle_point.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\update_particles_bounds.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\pointlight_shadow.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\reinhard_tonemapping.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\bounds_draw.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\filter_commands.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\billboards.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\noise.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\volume_light.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\equirect_to_cube.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\draw_sky.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\diffuse_irradiance_map.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\specular_irradiance_map.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\generate_cube_mip_linear.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\specular_brdf_lut.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
