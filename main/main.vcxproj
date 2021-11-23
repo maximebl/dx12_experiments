@@ -103,6 +103,9 @@
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>Pathcch.lib;$(TargetDir)common.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y $(SolutionDir)dependencies\assimp\assimp-vc142-mt.dll $(TargetDir)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -137,6 +140,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>Pathcch.lib;$(TargetDir)common.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y $(SolutionDir)dependencies\assimp\assimp-vc142-mt.dll $(TargetDir)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
