@@ -2004,7 +2004,7 @@ void particles_graphics::create_spotlight_shadowmaps()
     heap_props.Type = D3D12_HEAP_TYPE_DEFAULT;
     D3D12_HEAP_DESC shadows_heap_desc = {};
     shadows_heap_desc.Alignment = D3D12_DEFAULT_RESOURCE_PLACEMENT_ALIGNMENT;
-    shadows_heap_desc.Flags = D3D12_HEAP_FLAG_CREATE_NOT_ZEROED; // We always ClearDepthStencil() before writing to resources in this heap.
+    shadows_heap_desc.Flags = D3D12_HEAP_FLAG_NONE;
     shadows_heap_desc.Properties = heap_props;
     shadows_heap_desc.SizeInBytes = shadowmap_alloc_info.SizeInBytes * G_NUM_SHADOW_MAPS;
 
@@ -2088,7 +2088,7 @@ void particles_graphics::create_pointlight_shadowmaps()
     heap_props.Type = D3D12_HEAP_TYPE_DEFAULT;
     D3D12_HEAP_DESC shadows_heap_desc = {};
     shadows_heap_desc.Alignment = D3D12_DEFAULT_RESOURCE_PLACEMENT_ALIGNMENT;
-    shadows_heap_desc.Flags = D3D12_HEAP_FLAG_CREATE_NOT_ZEROED; // We always ClearDepthStencil() before writing to resources in this heap.
+    shadows_heap_desc.Flags = D3D12_HEAP_FLAG_NONE;
     shadows_heap_desc.Properties = heap_props;
     shadows_heap_desc.SizeInBytes = shadowmap_alloc_info.SizeInBytes;
 
