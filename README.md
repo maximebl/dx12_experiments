@@ -9,7 +9,7 @@ DirectX12 physically based deferred renderer implemented from scratch with the g
 * Blinn-Phong implementation used to contrast with other shading techniques.
 * Volumetric halos (point lights).
 * Multithreaded spot lights shadow maps.
-* Point lights and point shadows generated in a geometry shader.
+* Point lights with point shadows generated in a geometry shader.
 * Basic post processing including reinhard tonemapping and gamma correction.
 * C++ code hot reloading.
 * Basic CPU and GPU profiler.
